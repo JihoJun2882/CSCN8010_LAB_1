@@ -30,6 +30,9 @@ It simulates a predictive maintenance use case where **Alerts** and **Errors** a
 │ └── synthetic_offline_events.csv # detected events (output)
 ├── plots/
 │ └── axis_?_fit_and_residuals_scatter.png # per-axis fit & residual plots (output)
+├── captures/
+│ ├── ex) capture_error_axis7_20250923_031019_i5845
+│ └── ex) capture_alert_axis2_20250923_005648_i1610
 ├── Practical Lab 1.ipynb
 │ ├── 01_Database Integration
 │ ├── 02_Streaming Simulation
@@ -88,7 +91,12 @@ Use notebooks or factor the cells into scripts—either flow works. The steps be
   - Report alerts/hr and errors/hr per axis.
   - Save events to data/synthetic_offline_events.csv.
 
-5. Dashboard
+5. Streaming Playback + Live Alerts/Errors
+  - Real-time streaming plot
+  - Real-time plot of errors and alarms
+  - Capture and save error/alarm
+
+6. Dashboard
   - Render 2×4 board: observed vs. fit, highlight points where r ≥ MinC/r ≥ MaxC, overlay ALERT/ERROR bands with duration labels.
   - Save to data/offline_dashboard.png.
 
@@ -154,6 +162,12 @@ data/offline_dashboard.png — 2×4 dashboard with ALERT/ERROR bands and duratio
 
 data/synthetic_offline_events.csv
 <img src="data/synthetic_offline_events.csv">
+
+captures/capture_alert_axis{k}_{time} - Caputer each ALERT/ERROR
+<img src="captures/capture_alert_axis2_20250923_005648_i1610.png" width="720" />
+<img src="captures/capture_alert_axis2_20250923_015630_i3504.png" width="720" />
+<img src="captures/capture_error_axis7_20250923_004820_i1340.png" width="720" />
+<img src="captures/capture_error_axis7_20250923_031019_i5845.png" width="720" />
 
 ## Troubleshooting
 
